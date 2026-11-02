@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baccalaureate Academy | أكاديمية البكالوريا المصرية للمراحل الثلاث</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="src/styles/main.css" />
+</head>
+<body class="bg-slate-100 text-slate-900 antialiased selection:bg-teal-700 selection:text-white">
+  <!-- Toast Notifications Container -->
+  <div id="bacc-toast-container" class="fixed bottom-5 left-5 z-50 flex flex-col gap-2 max-w-sm w-full pointer-events-auto"></div>
+
+  <!-- Main SPA Mount Root -->
+  <div id="bacc-app-root"></div>
+
+  <!-- Application Modules -->
+  <script src="src/config/supabaseClient.js"></script>
+  <script src="src/data/curriculumSeed.js"></script>
+  <script src="src/db/rlsDatabaseEngine.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>
